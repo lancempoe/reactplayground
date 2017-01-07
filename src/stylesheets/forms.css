@@ -1,0 +1,51 @@
+.label {
+    padding-right: 0.5rem;
+}
+
+.form-td-label {
+    width: 200%;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 0;
+}
+
+.full {
+    width: 100%;
+}
+
+.form-td {
+    vertical-align: top;
+    padding-top: 0;
+}
+
+.button {
+    margin-top: 2px
+}
+
+.field {
+    padding-left: 1px;
+    width: 175px;
+    display: table-row;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+}
+
+.errors {
+    font-size: 0.8rem;
+    color: #EE0000;
+    margin-top: 0.25rem;
+    display: table-row;
+    animation: slide-down 0.3s backwards ease-in-out;
+}
+
+.form {
+    display: table;
+    margin: 0 auto;
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}

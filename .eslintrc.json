@@ -1,0 +1,23 @@
+{
+    "extends": "eslint:recommended",
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "rules": { // http://eslint.org/docs/rules/
+        "max-len": [2, 120, 4], //120 chars long
+        "no-var": 2, // require let or const instead of var
+        "prefer-arrow-callback": 2,
+        "prefer-const": 2, // suggest using const declaration for variables that are never modified after declared
+        "semi": ["error", "always"]
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true,
+            "experimentalObjectRestSpread": true
+        }
+    }
+}

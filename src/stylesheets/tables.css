@@ -1,0 +1,30 @@
+.header {
+    width: 15%;
+    font-weight: bold;
+}
+
+.container {
+    text-align: center;
+    padding: 5px;
+}
+
+.table {
+    border: 1px solid black;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    padding-bottom:30px;
+    align: center;
+    animation: slide-down 0.3s backwards ease-in-out;
+}
+
+.row {
+    border: 1px solid black;
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
