@@ -11,11 +11,11 @@ module.exports = function(config) {
         colors: true,
         concurrency: Infinity, // how many browser should be started simultaneous
         files: [
-            'test/neural-nets.js',
+            'test/neural-nets-*',
             //'src/**/*.js' //ADDED FOR COVERAGE
         ],
         preprocessors: {
-            'test/neural-nets.js' : ['babel', 'webpack', 'sourcemap']
+            'test/neural-nets-*' : ['babel', 'webpack', 'sourcemap']
         },
         reporters: ['progress'], //ADDED FOR COVERAGE
         // coverageReporter: { //ADDED FOR COVERAGE
