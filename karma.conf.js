@@ -11,19 +11,17 @@ module.exports = function(config) {
         colors: true,
         concurrency: Infinity, // how many browser should be started simultaneous
         files: [
-            'test/**/*Spec.js',
-            'src/**/*.js' //ADDED FOR COVERAGE
+            'test/neural-nets.js',
+            //'src/**/*.js' //ADDED FOR COVERAGE
         ],
         preprocessors: {
-            'test/**/*Spec.js' : ['babel', 'webpack', 'sourcemap'],
-            'src/**/*.js' : ['babel', 'webpack', 'sourcemap', 'coverage'] //ADDED FOR COVERAGE
-
+            'test/neural-nets.js' : ['babel', 'webpack', 'sourcemap']
         },
-        reporters: ['progress', 'coverage'], //ADDED FOR COVERAGE
-        coverageReporter: { //ADDED FOR COVERAGE
-            type : 'html',
-            dir : 'coverage/'
-        },
+        reporters: ['progress'], //ADDED FOR COVERAGE
+        // coverageReporter: { //ADDED FOR COVERAGE
+        //     type : 'html',
+        //     dir : 'coverage/'
+        // },
         webpack: {
             devtool: 'inline-source-map',
             resolve: {
@@ -62,7 +60,6 @@ module.exports = function(config) {
             "karma-webpack",
             "karma-sourcemap-loader",
             "karma-jasmine",
-            'karma-coverage'  //ADDED FOR COVERAGE
         ],
 
         babelPreprocessor: {
