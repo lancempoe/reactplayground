@@ -3,7 +3,6 @@ import _ from 'lodash';
 
 var inputLayer = new Layer(2); //1s and 0s
 var hiddenLayer1 = new Layer(6);
-//var hiddenLayer2 = new Layer(1);
 var outputLayer = new Layer(3); //[0,1,0]
 
 //Connect the input to the hidden layer
@@ -60,7 +59,7 @@ function showResults(){
   checkResults([2,2], [0,1,0]);
   checkResults([0,0], [0,1,0]);
   checkResults([4,5], [0,0,1]);
-  checkResults([9,10], [0,0,1])
+  checkResults([9,10], [0,0,1]);
 
 }
 
