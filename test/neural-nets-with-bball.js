@@ -1,6 +1,6 @@
 import {Layer, Network} from 'synaptic';
 
-var inputLayer = new Layer(10); //height, reach, l/r, age, rank
+var inputLayer = new Layer(10); //win,loss, totaldiff, 3point attp, 3point made, times 2
 var hiddenLayer1 = new Layer(15);
 var outputLayer = new Layer(1); // win/loss
 var myNetwork;
@@ -24,7 +24,6 @@ function trainingRun(){
     runHistoricalMatch([24,    5  ,   188  ,  605  ,  218  ,  22   , 9   ,  256   , 568  ,  206 ], [1]);
     runHistoricalMatch([22,    7  ,   349  ,  504  ,  181  ,  25   , 4   ,  4     , 528  ,  177 ], [0]);
     runHistoricalMatch([17,    11 ,   120  ,  556  ,  178  ,  20   , 12  ,  113   , 692  ,  241 ], [1]);
-    //win,loss, totaldiff, 3point attp, 3point made, repead
   }
 }
 

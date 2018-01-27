@@ -1,6 +1,6 @@
 import {Layer, Network} from 'synaptic';
 
-var inputLayer = new Layer(10); //height, reach, l/r, age, rank
+var inputLayer = new Layer(10); //height, reach, l/r, age, rank: times 2
 var hiddenLayer1 = new Layer(15);
 var outputLayer = new Layer(1); // win/loss
 var myNetwork;
