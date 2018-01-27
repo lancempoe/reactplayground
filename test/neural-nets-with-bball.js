@@ -48,6 +48,8 @@ describe("Forecasts", () => {
 
   it('Game 1', () => {
     expect(analizeMatch([25,4,323,428,154,23,5,300,427,162])).toEqual(1);
+  });
+  it('Game 2', () => {
     expect(analizeMatch([20,9,189,376,141,22,5,291,590,242])).toEqual(0);
   });
 });
