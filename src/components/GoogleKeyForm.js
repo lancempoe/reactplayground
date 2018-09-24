@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../stylesheets/forms.css';
 
 /* eslint-disable no-unused-vars */
@@ -36,8 +37,8 @@ class GoogleKeyForm extends React.Component {
 }
 
 GoogleKeyForm.propTypes = {
-    setGoogleApiKey: React.PropTypes.func,
-    errorMessage: React.PropTypes.string
+    setGoogleApiKey: PropTypes.func,
+    errorMessage: PropTypes.string
 };
 
 export default GoogleKeyForm;

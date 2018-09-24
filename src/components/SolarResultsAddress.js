@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../stylesheets/tables.css';
 import '../stylesheets/App.css';
 
@@ -13,7 +14,7 @@ class SolarResultsAddress extends React.Component {
 }
 
 SolarResultsAddress.propTypes = {
-    address: React.PropTypes.string
+    address: PropTypes.string
 };
 
 export default SolarResultsAddress;

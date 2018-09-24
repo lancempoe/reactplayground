@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import moment from 'moment';
 import '../stylesheets/forms.css';
 
@@ -68,8 +69,8 @@ class GoogleKeyForm extends React.Component {
 }
 
 GoogleKeyForm.propTypes = {
-    onSubmitForm: React.PropTypes.func,
-    errorMessage: React.PropTypes.string
+    onSubmitForm: PropTypes.func,
+    errorMessage: PropTypes.string
 };
 
 export default GoogleKeyForm;

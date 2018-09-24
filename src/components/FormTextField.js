@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../stylesheets/forms.css';
 
 /* eslint-disable no-unused-vars */
@@ -57,11 +58,11 @@ function getField(password, fieldName, placeholder) {
 }
 
 FormTextField.propTypes = {
-    label: React.PropTypes.string,
-    placeholder: React.PropTypes.string,
-    fieldName: React.PropTypes.string,
-    errorMessage: React.PropTypes.string,
-    password: React.PropTypes.string
+    label: PropTypes.string,
+    placeholder: PropTypes.string,
+    fieldName: PropTypes.string,
+    errorMessage: PropTypes.string,
+    password: PropTypes.string
 };
 
 export default FormTextField;

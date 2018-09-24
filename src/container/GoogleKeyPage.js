@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Actions from '../actions/GoogleKeyActions';
+import Actions from '../actions/googleKeyActions';
 import GoogleKeyForm from '../components/GoogleKeyForm';// eslint-disable-line no-unused-vars
 import _ from 'lodash';
 import '../stylesheets/App.css';
@@ -25,7 +26,7 @@ export class GoogleKeyPage extends React.Component {
 }
 
 GoogleKeyPage.propTypes = {
-    errorMessage: React.PropTypes.string
+    errorMessage: PropTypes.string
 };
 
 const mapStateToProps = function(store) {

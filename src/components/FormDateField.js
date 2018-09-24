@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../stylesheets/forms.css';
 
 /* eslint-disable no-unused-vars */
@@ -38,10 +39,10 @@ class FormDateField extends React.Component {
 }
 
 FormDateField.propTypes = {
-    label: React.PropTypes.string,
-    placeholder: React.PropTypes.string,
-    fieldName: React.PropTypes.string,
-    errorMessage: React.PropTypes.string,
+    label: PropTypes.string,
+    placeholder: PropTypes.string,
+    fieldName: PropTypes.string,
+    errorMessage: PropTypes.string,
 };
 
 export default FormDateField;

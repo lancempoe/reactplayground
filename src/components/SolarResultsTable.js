@@ -6,6 +6,7 @@ import SolarResultsAddress from './SolarResultsAddress';
 import moment from 'moment';
 import _ from 'lodash';
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../stylesheets/tables.css';
 
 class SolarResultsTable extends React.Component{
@@ -59,9 +60,9 @@ SolarResultsTable.defaultProps = {
 };
 
 SolarResultsTable.propTypes = {
-    rows: React.PropTypes.array,
-    address: React.PropTypes.string,
-    offset: React.PropTypes.number
+    rows: PropTypes.array,
+    address: PropTypes.string,
+    offset: PropTypes.number
 };
 
 export default SolarResultsTable;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../stylesheets/tables.css';
 
 class SolarResultRow extends React.Component{
@@ -19,10 +20,10 @@ class SolarResultRow extends React.Component{
 }
 
 SolarResultRow.propTypes = {
-    sunrise: React.PropTypes.string,
-    sunset: React.PropTypes.string,
-    nauticalAft: React.PropTypes.number,
-    dayLength: React.PropTypes.number
+    sunrise: PropTypes.string,
+    sunset: PropTypes.string,
+    nauticalAft: PropTypes.number,
+    dayLength: PropTypes.number
 };
 
 export default SolarResultRow;

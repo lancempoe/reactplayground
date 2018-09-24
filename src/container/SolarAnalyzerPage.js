@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Actions from '../actions/SolarAnalyzerActions';
 import _ from 'lodash';
@@ -31,12 +32,12 @@ class SolarAnalyzerPage extends React.Component {
 }
 
 SolarAnalyzerPage.propTypes = {
-    googleKey: React.PropTypes.string,
-    validatedAddress: React.PropTypes.string,
-    validatedLocation: React.PropTypes.object,
-    utcOffsetMinutes: React.PropTypes.number,
-    errorMessage: React.PropTypes.string,
-    solarResults: React.PropTypes.array
+    googleKey: PropTypes.string,
+    validatedAddress: PropTypes.string,
+    validatedLocation: PropTypes.object,
+    utcOffsetMinutes: PropTypes.number,
+    errorMessage: PropTypes.string,
+    solarResults: PropTypes.array
 };
 
 const mapStateToProps = function(store) {

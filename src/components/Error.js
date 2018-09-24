@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../stylesheets/forms.css';
 import { Errors } from 'react-redux-form'; // eslint-disable-line no-unused-vars
 
@@ -19,8 +20,8 @@ class Error extends React.Component {
 }
 
 Error.propTypes = {
-    fieldName: React.PropTypes.string,
-    errorMessage: React.PropTypes.string
+    fieldName: PropTypes.string,
+    errorMessage: PropTypes.string
 };
 
 export default Error;
