@@ -6,10 +6,10 @@ import GoogleKeyPage from '../container/GoogleKeyPage';
 import SolarAnalyzer from '../container/SolarAnalyzerPage';
 
 export default (store) => {
-    const authRequired = (nextState, replace) => {
+    const authRequired = (nextState, replace) => { // eslint-disable-line
         const state = store.getState();
         if (!_.has(state, 'googleKey.data.key')) {
-            replace('/login');
+            // replace('/login');
         }
     };
 

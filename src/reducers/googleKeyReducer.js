@@ -1,7 +1,9 @@
 import Constants from '../constants/ActionTypes';
 
 const initialState = {
-    data: {}
+    data: {
+        key: 'AIzaSyCWWmmzsGOwuupxU0vr73nXA_d3z8UUPLk',
+    }
 };
 
 const reducer = function(state = initialState, action) {

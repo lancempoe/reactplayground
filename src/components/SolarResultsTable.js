@@ -38,12 +38,13 @@ class SolarResultsTable extends React.Component{
     }
 }
 
+//_.uniqueId was causing the issues
 function getRows(rows, offset) {
     const solarResultRows = [];
     rows.map((row) => {
         solarResultRows.push(
             <SolarResultRow
-                key={_.uniqueId('row_')}
+                key={`${row.sunrise}${row.sunset}`}
                 sunrise={moment(row.sunrise).utcOffset(offset).format("MM/DD/YYYY HH:mm")}
                 sunset={moment(row.sunset).utcOffset(offset).format("MM/DD/YYYY HH:mm")}
                 dayLength={row.dayLength}

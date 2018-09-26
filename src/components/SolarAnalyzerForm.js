@@ -9,7 +9,7 @@ import FormTextField from '../components/FormTextField';
 import FormDateField from '../components/FormDateField';
 /* eslint-enable no-unused-vars */
 
-class SolarAnalyzerForm extends React.Component {
+class SolarAnalyzerForm extends React.PureComponent { //this will stop only one extra render :(
 
     render() {
 

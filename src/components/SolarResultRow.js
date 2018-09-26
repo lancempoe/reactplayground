@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../stylesheets/tables.css';
 
-class SolarResultRow extends React.Component{
+class SolarResultRow extends React.PureComponent {
     constructor(props) {
         super(props);
     }

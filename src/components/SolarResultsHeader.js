@@ -1,7 +1,7 @@
 import React from 'react';
 import '../stylesheets/tables.css';
 
-class SolarResultsHeader extends React.Component {
+class SolarResultsHeader extends React.PureComponent { //changed from updating 15 times to only 1!
     render() {
         return (
             <tr>
