@@ -40,7 +40,7 @@ class SolarResultsTable extends React.Component{
 
 function getRows(rows, offset) {
     const solarResultRows = [];
-    rows.forEach(row => {
+    rows.map((row) => {
         solarResultRows.push(
             <SolarResultRow
                 key={_.uniqueId('row_')}

@@ -71,6 +71,11 @@ function validateLocation(resolve, reject, address, encodedKey) {
             reject({type: constants.SET_GOOGLE_KEY_ERROR, message: 'Invalid Google Api Key'});
         } else if (validLocation.status == 'ZERO_RESULTS') {
             reject({type: constants.SET_SOLAR_ERROR, message: 'Invalid Address'});
+        } else if (validLocation.status === 'OVER_QUERY_LIMIT') {
+            console.log("Over your quota, using default address"); // eslint-disable-line  no-console
+            validLocation.lat = '45.519093';
+            validLocation.lng = '-122.679489';
+            validLocation.address = "Default Location: 701 SW 6th Ave, Portland, OR 97205";
         }
         resolve(validLocation);
     });
@@ -148,6 +153,8 @@ function getSunriseSunsetInfo(resolve, reject, location, utc) {
 }
 
 function handleError(error) {
+    console.log({error}); // eslint-disable-line  no-console
+
     store.dispatch({
         type: error.type,
         data: {message: error.message}

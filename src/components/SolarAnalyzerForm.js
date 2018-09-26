@@ -9,7 +9,7 @@ import FormTextField from '../components/FormTextField';
 import FormDateField from '../components/FormDateField';
 /* eslint-enable no-unused-vars */
 
-class GoogleKeyForm extends React.Component {
+class SolarAnalyzerForm extends React.Component {
 
     render() {
 
@@ -68,9 +68,9 @@ class GoogleKeyForm extends React.Component {
     }
 }
 
-GoogleKeyForm.propTypes = {
+SolarAnalyzerForm.propTypes = {
     onSubmitForm: PropTypes.func,
     errorMessage: PropTypes.string
 };
 
-export default GoogleKeyForm;
+export default SolarAnalyzerForm;

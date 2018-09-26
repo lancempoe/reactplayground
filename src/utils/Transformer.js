@@ -17,6 +17,9 @@ export function getTimeZone(response) {
     const location = {};
     if (_.has(json, 'rawOffset')) {
         location.offset = _.get(json, 'rawOffset') / 60;
+    } else {
+        console.log("Over your quota, using default TimeZone"); // eslint-disable-line  no-console
+        location.offset = -28800 / 60;
     }
     return location;
 }
